@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+}
+
+#title {
+  text-align: center;
+  background-color: lightblue;
+  margin: 0;
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+#pokemon-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 420px;
+  border: solid 2px darkgray;
+  border-radius: 20px 50px 20px 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#bulbasaur {
+  background-color: lightgreen;
+}
+
+#squirtle {
+  background-color: lightskyblue;
+}
+
+#charmander {
+  background-color: salmon;
+}
