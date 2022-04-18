@@ -46,3 +46,111 @@ h2 {
 #charmander {
   background-color: salmon;
 }
+
+button {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  transform: scale(0.8); 
+  transition-duration: 0.2s
+}
+
+#bulbasaur {
+  transition-duration: 1s;
+}
+
+#bulbasaur:hover img {
+  /* transform: translateY(-50px); */
+  /* transform: translateX(50px); */
+  /* transform: translate(-50px, 30px); */
+  /* transform: translate(ejeX, ejeY); */
+  transform: rotate(-360deg);
+
+  transition-duration: 1s;
+}
+
+
+/* Keyframes */
+
+@keyframes colorAnimation {
+
+  0% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: darkred;
+  }
+
+  100% {
+    background-color: purple;
+  }
+
+}
+
+#charmander:hover {
+  animation-name: colorAnimation;
+  animation-duration: 1s;
+  background-color: purple;
+}
+
+#img2 {
+  display: none; 
+  /* basicamente hacer invisible */
+}
+
+#charmander:hover #img2 {
+  display: block;
+}
+
+#charmander:hover #img1 {
+  display: none;
+}
+
+
+@keyframes complexAnimation {
+
+  5% {
+    transform: rotate(10deg)
+  }
+
+  10% {
+    transform: rotate(0deg);
+    background-color: lightgreen;
+  }
+
+  15% {
+    transform: rotate(-10deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+    background-color: lightgoldenrodyellow;
+  }
+
+  40% {
+    transform: translateY(-10px);
+    background-color: blue;
+  }
+
+  100% {
+    transform: scale(1.2)
+  }
+
+}
+
+#squirtle:hover {
+  animation-name: complexAnimation;
+  animation-duration: 1.5s;
+  transform: scale(1.2);
+  background-color: blue;
+}
